@@ -16,13 +16,18 @@ public class Runner {//class baþlangýç
 		boolean ana_menu_return = false;
 		do {
 		System.out.println("------------------------------");
-		System.out.println("Hesap Makinasine Hos Geldiniz");
+		System.out.println("Hesap Makinesine Hos Geldiniz");
 		System.out.println("------------------------------");
 		
 		//Degiskenler
 		
 		int sayi1, sayi2;
 		String ana_menu = "";
+		String ilk_deger = "Ilk degeri yazin:";
+		String ikinci_deger = "Ikinci degeri yazin";
+		String sonuc = "Sonuc: ";
+		String baskaislem = "Baska bir islem yapmak ister misiniz? (e/h)";
+		
 		
 		for (int i = 0; i < 3; i++)System.out.println("");
 		
@@ -37,12 +42,12 @@ public class Runner {//class baþlangýç
 		
 		case 1: {
 			
-			System.out.print("Ilk degeri girin: ");
+			System.out.print(ilk_deger);
 			sayi1=sc.nextInt();
-			System.out.print("Ikýnci degeri girin: ");
+			System.out.print(ikinci_deger);
 			sayi2=sc.nextInt();
 			System.out.println("Sonuc: "+ (sayi1+sayi2));
-			System.out.println("Baska bir islem yapmak ister misiniz?(e/h)");
+			System.out.println("baskaislem");
 			
 		       	ana_menu = sc.next();
 				if(ana_menu.equals("e")) {
@@ -62,12 +67,12 @@ public class Runner {//class baþlangýç
 				}//case 1 sonu
 		case 2: {
 			
-			System.out.print("Ilk degeri girin: ");
+			System.out.print(ilk_deger);
 			sayi1=sc.nextInt();
-			System.out.print("Ikýnci degeri girin: ");
+			System.out.print(ikinci_deger);
 			sayi2=sc.nextInt();
 			System.out.println("Sonuc: "+ (sayi1-sayi2));
-			System.out.println("Baska bir islem yapmak ister misiniz?(e/h)");
+			System.out.println("baskaislem");
 			
 		       	ana_menu = sc.next();
 				if(ana_menu.equals("e")) {
@@ -87,12 +92,12 @@ public class Runner {//class baþlangýç
 			
 		case 3: {
 			
-			System.out.print("Ilk degeri girin: ");
+			System.out.print(ilk_deger);
 			sayi1=sc.nextInt();
-			System.out.print("Ikýnci degeri girin: ");
+			System.out.print(ikinci_deger);
 			sayi2=sc.nextInt();
 			System.out.println("Sonuc: "+ (sayi1*sayi2));
-			System.out.println("Baska bir islem yapmak ister misiniz?(e/h)");
+			System.out.println("baskaislem");
 			
 		       	ana_menu = sc.next();
 				if(ana_menu.equals("e")) {
@@ -112,12 +117,12 @@ public class Runner {//class baþlangýç
 		
 		case 4: {
 			
-			System.out.print("Ilk degeri girin: ");
+			System.out.print(ilk_deger);
 			sayi1=sc.nextInt();
-			System.out.print("Ikýnci degeri girin: ");
+			System.out.print(ikinci_deger);
 			sayi2=sc.nextInt();
 			System.out.println("Sonuc: "+ (sayi1/sayi2));
-			System.out.println("Baska bir islem yapmak ister misiniz?(e/h)");
+			System.out.println("baskaislem");
 			
 
 			
@@ -149,7 +154,7 @@ public class Runner {//class baþlangýç
 		 
 			}//switch sonu
 		
-		} while (ana_menu_return);//while sonu
+		} while (ana_menu_return);//do sonu
 		
 	}//metot sonu
 		
